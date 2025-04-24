@@ -20,7 +20,7 @@ int main (){
 
         } else if (a == b || a == c || b == c) {
 
-            printf("Tipo: Isóceles\n");
+            printf("Tipo: Isósceles\n");
         } else {
 
             printf("Tipo: Escaleno\n");
