@@ -7,7 +7,7 @@
 int main (){
     float a, b, c;
 
-    printf("digite os três lados do triâmgulo:\n");
+    printf("digite os três lados do triângulo:\n");
 
     scanf("%f %f %f", &a, &b, &c);
 
@@ -20,7 +20,7 @@ int main (){
 
         } else if (a == b || a == c || b == c) {
 
-            printf("Tipo: Isóseles\n");
+            printf("Tipo: Isóceles\n");
         } else {
 
             printf("Tipo: Escaleno\n");
