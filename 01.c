@@ -1,29 +1,23 @@
 #include <stdio.h>
+#include <math.h>
 
-int main (){
-    float a, b, c;
+int main(){
+    float numero;
+    float quadrado, cubo;
+    float raizQuadrada, raizCubica;
 
-    printf("digite os três lados do triâmgulo:\n");
+    printf("Digite um numero maior que zero: ");
+    scanf("%f", &numero);
 
-    scanf("%f %f %f", &a, &b, &c);
+    quadrado = numero * numero;
+    cubo = numero * numero * numero;
+    raizQuadrada = sqrt(numero);
+    raizCubica = pow(numero, 1.0 / 3.0);
 
-    if(a + b > c && a + c > b && b + c > a) {
-
-        printf("É um triângulo.\n");
-
-        if (a == b && b == c) {
-            printf("Tipo: Equilátero\n");
-
-        } else if (a == b || a == c || b == c) {
-
-            printf("Tipo: Isóseles\n");
-        } else {
-
-            printf("Tipo: Escaleno\n");
-        }
-    } else { 
-        printf("Os valores fornecidos não formam um triângulo.\n");
-    }
+    printf("Numero ao quadrado: %.2f\n", quadrado);
+    printf("Numero ao cubo: %.2f\n", cubo);
+    printf("Raiz quadrada: %.2f\n", raizQuadrada);
+    printf("Raiz cubica: %.2f\n", raizCubica);
 
     return 0;
 }
