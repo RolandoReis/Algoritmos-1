@@ -1,29 +1,23 @@
 #include <stdio.h>
 
-int main (){
-    float a, b, c;
+int main(){
 
-    printf("digite os três lados do triâmgulo:\n");
+    int x;
+    
+    scanf("%d", &x);
 
-    scanf("%f %f %f", &a, &b, &c);
-
-    if(a + b > c && a + c > b && b + c > a) {
-
-        printf("É um triângulo.\n");
-
-        if (a == b && b == c) {
-            printf("Tipo: Equilátero\n");
-
-        } else if (a == b || a == c || b == c) {
-
-            printf("Tipo: Isóseles\n");
-        } else {
-
-            printf("Tipo: Escaleno\n");
-        }
-    } else { 
-        printf("Os valores fornecidos não formam um triângulo.\n");
+    if (x > 10){
+        printf("\nÉ MAIOR QUE 10!\n\n");
+    } else {
+        printf("\nNÃO É MAIOR QUE 10!\n\n");
     }
 
-    return 0;
+
+
+
+
+return 0;
+
+
+
 }
