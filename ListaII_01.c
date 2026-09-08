@@ -15,7 +15,7 @@ int main(){
         printf("Você está apto!!\n");
 
     } else {
-        printf("Vocẽ não está apto!!\n");    
+        printf("Você não está apto!!\n");    
 
     }
 
