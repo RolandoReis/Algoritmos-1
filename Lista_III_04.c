@@ -1,26 +1,34 @@
 #include <stdio.h>
 
-int main(){
+int main() {
+    int n;
+    int cont_primos = 0;
+    int numero = 2;
+    int soma = 0;
 
-    int i = 2;
-    int valor = 5;
-    int primo = 0;
-    int cont_mult = 0;
+    printf("Digite a quantidade de numeros primos desejada: ");
+    scanf("%d", &n);
 
-    printf("Digite um numero: \n");
-    scanf("%d", &valor);
+    while (cont_primos < n) {
+        int i = 2;
+        int eh_primo = 1;
 
-    while(i < valor){
-
-        if(valor % i == 0){
-            primo = 1;
-        i++;
-        }
-        if(primo == 0){
-            printf("E primo\n");
-        } else {
-            printf("Nao e primo\n");
+        while (i < numero) {
+            if (numero % i == 0) {
+                eh_primo = 0;
+            }
+            i++;
         }
 
-            return 0;
-    } 
+        if (eh_primo == 1) {
+            soma = soma + numero;
+            cont_primos++;
+        }
+
+        numero++;
+    }
+
+    printf("A soma dos primeiros %d numeros primos e: %d\n", n, soma);
+
+    return 0;
+}
