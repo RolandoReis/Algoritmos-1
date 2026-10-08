@@ -3,10 +3,7 @@
 int main(){
 
     int menu;
-    float a, b, soma, mult;
-
-    soma =  a + b;
-    mult = a * b;
+    float a, b;
 
     do {
         printf("1 - Somar dois numeros\n");
@@ -21,7 +18,7 @@ int main(){
                 printf("somar dois numeros \n");
                 scanf("%f", &a);
                 scanf("%f", &b);
-                printf("Resultado: %2.f\n", soma);
+                printf("Resultado: %2.f\n", a + b);
 
                 break;
 
@@ -30,7 +27,7 @@ int main(){
                 printf("multiplicar dois numeros \n");
                 scanf("%f", &a);
                 scanf("%f", &b);
-                printf("Resultado: %2.f\n", mult);
+                printf("Resultado: %2.f\n", a * b);
 
                 break;
 
